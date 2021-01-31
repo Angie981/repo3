@@ -20,6 +20,7 @@ import AsignarPresupuesto from './Componentes/AsignarPresupuesto';
 import ImportePagos from './Componentes/Importe-Pagos';
 import RegistroCostoPrograma from './Componentes/RegistroCostoPrograma';
 import RegistroPresupuesto from './Componentes/RegistroPresupuesto';
+import DemandaLaboral from './Componentes/DemandaLaboral';
 
 class Index extends React.Component {
     render() {
@@ -46,6 +47,7 @@ class Index extends React.Component {
             <Route path="/vista/loginApp" component={LoginApp}></Route>
 		    <Route path="/vista/presupuesto" component={AsignarPresupuesto}></Route>
 			<Route path="/vista/presupuestoRegistro" component={RegistroPresupuesto}></Route>
+            <Route path="/vista/demandaLaboral" component={DemandaLaboral}></Route>
 	
 
           </Router>

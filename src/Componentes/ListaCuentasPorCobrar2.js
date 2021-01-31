@@ -337,10 +337,10 @@ setField = (e) => {
     return(
         <div className="">
             <button onClick={this.seleccionarOrDesseleccionar} className="waves-effect waves-light btn-small newbotonSeleccionar start mt-1">
-            Seleccionar todo<i className="large material-icons left">check</i> ></button>
+            Seleccionar todo<i className="large material-icons left">check</i></button>
 
             <button onClick={this.notificacionesElectronicas} className="waves-effect waves-light btn-small newbotonSeleccionar start mt-1" disabled={this.state.filasSelec.length==0 ? true : false}>
-            Notificar<i className="large material-icons left" >check</i> ></button>
+            Notificar<i className="large material-icons left" >check</i></button>
             
             <hr></hr>
             <hr></hr>

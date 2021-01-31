@@ -107,6 +107,13 @@ class LoginForm extends React.Component {
     }
   }
 
+  DemandaLaboral=(e)=>{
+
+    browserHistory.push('/vista/demandaLaboral');
+    // console.log("Vista presupuesto");
+    e.preventDefault();
+  }
+
   Regresar=(e)=>{
       
     browserHistory.push('/vista/loginFormAdmi'); //se añadio la ruta
@@ -136,10 +143,11 @@ class LoginForm extends React.Component {
       <nav>
     <div className="nav-wrapper azul">
       <ul id="nav-mobile" className="right hide-on-med-and-down">
-		<li><a onClick={this.vistaPresupuesto} >  <i className="small material-icons right">attach_money</i>Registro Costo Programas</a></li>															 
+		    <li><a onClick={this.vistaPresupuesto} >  <i className="small material-icons right">attach_money</i>Registro Costo Programas</a></li>															 
         <li><a onClick={this.VistaNueva2}><i className="small material-icons right">check_box</i>Asignar Programa</a></li>
         <li><a onClick={this.AsignacionPresupuesto}><i className="small material-icons right">check_box</i>Presupuesto Masivo</a></li>
-		<li ><a className="seleccionar" onClick={this.RegresarAdmin} >Salir<i className="material-icons right">reply</i></a></li>																													  
+        <li><a onClick={this.DemandaLaboral}><i className="small material-icons right">business_center</i>Demanda Laboral</a></li>
+		    <li ><a className="seleccionar" onClick={this.RegresarAdmin} >Salir<i className="material-icons right">reply</i></a></li>																													  
       </ul>
     </div>
   </nav>
